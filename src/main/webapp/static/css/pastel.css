@@ -1,0 +1,83 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f9f3f3;
+    color: #8d99ae;
+    text-align: center;
+}
+
+.pastel-container {
+    text-align: center;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid #DBD2CF;
+    border-radius: 10px;
+    margin: 50px auto;
+    max-width: 800px;
+}
+
+h1 {
+    color: #DBD2CF;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.5em;
+    color: #8d99ae;
+    margin-bottom: 30px;
+}
+
+.btn-pastel {
+    background-color: #DBD2CF;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-pastel:hover {
+    background-color: #DBD2CF;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+    color: #6c757d;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+    background-color: #DBD2CF;
+}
+
+.table tbody + tbody {
+    border-top: 2px solid #dee2e6;
+}
+
+.table .thead-light th {
+    color: #6c757d;
+    background-color: #f9f3f3;
+    border-color: #dee2e6;
+}
+
+.action-icon {
+    margin-right: 10px;
+    color: #6c757d;
+}
+
+.action-icon:hover {
+    color: #6c757d;
+}

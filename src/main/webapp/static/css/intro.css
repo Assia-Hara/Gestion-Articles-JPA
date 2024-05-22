@@ -1,0 +1,43 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #DBD2CF;
+    color: #8d99ae;
+    text-align: center;
+}
+
+.vaporwave-container {
+    text-align: center;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid #FCFAF2;
+    border-radius: 10px;
+    margin: 50px auto;
+    max-width: 800px;
+}
+
+h1 {
+    color: #FCFAF2;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.5em;
+    color: #edf2f4;
+    margin-bottom: 30px;
+}
+
+.btn-vaporwave {
+    background-color: #DBD2CF;
+    color: rgba(78, 72, 57, 0.62);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-vaporwave:hover {
+    background-color: #FCFAF2;
+}
