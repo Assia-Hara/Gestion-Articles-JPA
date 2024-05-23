@@ -18,7 +18,6 @@
             <p>
                 <font color="red">${AccountCreationError}</font>
             </p>
-            <!-- New Account Form -->
             <form action="${pageContext.request.contextPath}/addUser.do" method="post">
                 <input type="text" id="username" class="fadeIn second" name="username" placeholder="Username">
                 <input type="password" id="password" class="fadeIn third" name="password" placeholder="Password">

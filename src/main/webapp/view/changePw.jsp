@@ -18,7 +18,6 @@
             <p>
                 <font color="red">${error}</font>
             </p>
-            <!-- Change Password Form -->
             <form action="${pageContext.request.contextPath}/changePw.do" method="post">
                 <input type="password" id="currentPassword" class="fadeIn second" name="currentPassword" placeholder="Current Password">
                 <input type="password" id="newPassword" class="fadeIn third" name="newPassword" placeholder="New Password">

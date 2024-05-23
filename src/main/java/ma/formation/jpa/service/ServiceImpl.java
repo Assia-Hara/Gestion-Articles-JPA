@@ -47,7 +47,7 @@ public class ServiceImpl implements IService {
         if (u == null)
             return false;
 
-        // Hash the input password and compare it with the stored hashed password
+
         String hashedPassword = hashPasswordMD5(password);
         return hashedPassword.equals(u.getPassword());
     }

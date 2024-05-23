@@ -135,7 +135,6 @@ public class DaoImplJPA implements IDao {
         }
     }
 
-    // New method to renew password
     public void renewPassword(String username, String newPassword) {
         try {
             session = DatabaseManager.getSessionFactory().createEntityManager();

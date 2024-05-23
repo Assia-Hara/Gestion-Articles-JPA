@@ -24,13 +24,11 @@ public class AuthFilter implements Filter {
         HttpServletRequest httpRequest = (HttpServletRequest) request;
         String path = httpRequest.getServletPath();
 
-        // Allow unauthenticated access to addUser.do
         if (path.equals("/addUser.do")) {
             chain.doFilter(request, response);
             return;
         }
 
-        // Check if user is authenticated
         if (null != httpRequest.getSession().getAttribute("username")) {
             chain.doFilter(request, response);
         } else {

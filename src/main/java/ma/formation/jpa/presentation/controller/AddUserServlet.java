@@ -36,12 +36,11 @@ public class AddUserServlet extends HttpServlet {
             request.setAttribute("AccountCreationError", "Passwords do not match or missing information.");
             request.getRequestDispatcher("/view/addUser.jsp").forward(request, response);
         } else {
-            // Hash the password using MD5
             String hashedPassword = hashPasswordMD5(password);
 
             User user = new User();
             user.setUsername(username);
-            user.setPassword(hashedPassword); // Store the hashed password
+            user.setPassword(hashedPassword);
 
             dao.save(user);
 

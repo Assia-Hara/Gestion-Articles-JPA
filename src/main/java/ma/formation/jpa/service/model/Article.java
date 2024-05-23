@@ -18,12 +18,12 @@ import lombok.NoArgsConstructor;
 public class Article {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id; // Use Integer here
+    private Integer id;
     private String description;
     private int quantity;
     private double price;
 
-    // Getters and setters
+
     public Integer getId() {
         return id;
     }

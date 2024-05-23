@@ -18,7 +18,6 @@
             <p>
                 <font color="red">${AccountIncorrect}</font>
             </p>
-            <!-- Login Form -->
             <form action="${pageContext.request.contextPath}/login.do" method="post">
                 <input type="text" id="login" class="fadeIn second" name="username" placeholder="login">
                 <input type="password" id="password" class="fadeIn third" name="password" placeholder="password">
