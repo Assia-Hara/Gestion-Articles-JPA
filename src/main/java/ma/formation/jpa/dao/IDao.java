@@ -12,6 +12,5 @@ public interface IDao {
     void save(User user);
     void deleteAll();
 
-    public void addUser(User user);
     public void renewPassword(String username, String newPassword);
 }

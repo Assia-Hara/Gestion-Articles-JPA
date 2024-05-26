@@ -118,22 +118,6 @@ public class DaoImplJPA implements IDao {
         }
     }
 
-    // New method to add a user
-    public void addUser(User user) {
-        try {
-            session = DatabaseManager.getSessionFactory().createEntityManager();
-            EntityTransaction tx = session.getTransaction();
-            tx.begin();
-            session.persist(user);
-            tx.commit();
-            session.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            if (session != null)
-                session.close();
-        }
-    }
 
     public void renewPassword(String username, String newPassword) {
         try {

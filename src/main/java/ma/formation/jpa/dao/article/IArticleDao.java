@@ -7,6 +7,6 @@ public interface IArticleDao {
     List<Article> findAll();
     void save(Article article);
     void deleteAll();
-    Article findById(Integer id); // Change to Integer
-    void delete(Integer id); // Change to Integer
+    Article findById(Integer id);
+    void delete(Integer id);
 }

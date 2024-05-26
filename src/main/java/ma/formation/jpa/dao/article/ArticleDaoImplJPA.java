@@ -58,7 +58,7 @@ public class ArticleDaoImplJPA implements IArticleDao {
     }
 
     @Override
-    public Article findById(Integer id) { // Use Integer here
+    public Article findById(Integer id) {
         Article article = null;
         try {
             session = DatabaseManager.getSessionFactory().createEntityManager();
@@ -72,7 +72,7 @@ public class ArticleDaoImplJPA implements IArticleDao {
     }
 
     @Override
-    public void delete(Integer id) { // Use Integer here
+    public void delete(Integer id) {
         EntityTransaction tx = null;
         try {
             session = DatabaseManager.getSessionFactory().createEntityManager();

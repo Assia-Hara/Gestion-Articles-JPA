@@ -20,7 +20,7 @@ public class EditArticleServlet extends HttpServlet {
         String idParam = request.getParameter("id");
         if (idParam != null) {
             try {
-                Integer id = Integer.parseInt(idParam); // Ensure Integer type
+                Integer id = Integer.parseInt(idParam);
                 Article article = service.getArticleById(id);
                 if (article != null) {
                     request.setAttribute("article", article);
